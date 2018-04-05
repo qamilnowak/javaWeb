@@ -27,7 +27,7 @@ public class HelloServerApplication {
 						DateTimeFormatter myFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 				String time = "\nCzas to "+now.format(myFormatter);
 				String visits = "To są: "+counter.incrementAndGet() + "odwiedziny";
-
+String inputHtml = "<input type='text' name='userName'>";
 				return ServerResponse.ok().body(fromObject(welcome + time + visits));}
 				);
 
